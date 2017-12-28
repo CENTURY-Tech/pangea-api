@@ -1,0 +1,36 @@
+{
+  "name": "pangea-api",
+  "version": "1.0.0",
+  "description": "prototype api for pangea",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run prepare:dist && node dist/index.js",
+    "prepare:dev": "npm run clean:dev && npm run lint-ts && npm run tsc:dev && npm run copy:html-dev && npm run copy:img-dev",
+    "prepare:dist": "npm run clean:dist && npm run lint-ts && npm run tsc:dist",
+    "prepare:test": "npm run clean:test && npm run lint-ts && npm run tsc:test",
+    "predocs": "rm -rf docs",
+    "docs": "typedoc --tsconfig tsconfig.main.json --excludePrivate --mode file --name \"Planner\" --out docs",
+    "tsc:dev": "tsc -p tsconfig.main.json",
+    "tsc:dist": "tsc -p tsconfig.main.json --outDir ./dist",
+    "tsc:test": "tsc -p tsconfig.test.json",
+    "clean:dist": "rm -rf dist",
+    "clean:test": "rm -rf test",
+    "lint-ts": "tslint -c tslint.json './src/**/*.ts' --fix",
+    "test": "npm run prepare:dev && npm run prepare:test && wct --plugin browserstack",
+    "install:typings": "rm -rf typings && typings i"
+  },
+  "author": "Century TECH",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^16.1.11",
+    "joi": "^13.0.2"
+  },
+  "devDependencies": {
+    "@types/hapi": "^16.1.11",
+    "@types/joi": "^13.0.3",
+    "@types/node": "^8.5.2",
+    "cpy-cli": "^1.0.1",
+    "typescript": "^2.6.2",
+    "typings": "^2.1.1"
+  }
+}

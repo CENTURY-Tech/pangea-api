@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "declaration": true,
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "removeComments": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "lib": [
+      "es2016",
+      "dom"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "typings"
+  ],
+  "exclude": [
+    "node_modules",
+    "bower_components"
+  ]
+}
