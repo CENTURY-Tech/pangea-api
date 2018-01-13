@@ -22,8 +22,12 @@
   "author": "Century TECH",
   "license": "MIT",
   "dependencies": {
+    "@types/z-schema": "^3.16.32",
+    "enjoi": "^3.1.0",
     "hapi": "^16.1.11",
-    "joi": "^13.0.2"
+    "joi": "^13.0.2",
+    "pangea-models": "0.0.1",
+    "z-schema": "^3.19.0"
   },
   "devDependencies": {
     "@types/hapi": "^16.1.11",
