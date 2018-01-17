@@ -26,7 +26,7 @@
     "enjoi": "^3.1.0",
     "hapi": "^16.1.11",
     "joi": "^13.0.2",
-    "pangea-models": "0.0.1",
+    "pangea-models": "git+https://git@github.com:CENTURY-Tech/pangea-models.git",
     "z-schema": "^3.19.0"
   },
   "devDependencies": {

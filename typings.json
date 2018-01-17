@@ -1,0 +1,10 @@
+{
+  "globalDependencies": {
+    "sinon": "registry:dt/sinon#1.16.1+20161208163514",
+    "user-interface": "file:./node_modules/pangea-json-schemas/dist/models/UserInterface.d.ts"
+  },
+  "dependencies": {
+    "pangea-json-schemas": "file:./node_modules/pangea-json-schemas/dist/index.d.ts",
+    "pangea-models": "file:./node_modules/pangea-models/dist/users/User.d.ts"
+  }
+}
